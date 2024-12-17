@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветочный сервис</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .hero {
+            background: url(https://t.me/c/2269531933/136) no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .grid .container {
+            flex: 1 1 calc(33.333% - 20px);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid .container h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .grid .container p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid .container {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid .container {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Цветочный сервис</h1>
+    </header>
+
+    <nav>
+        <a href="#design">Дизайн букетов</a>
+        <a href="#subscription">Подписка</a>
+        <a href="#events">Мероприятия</a>
+        <a href="#workshops">Мастер-классы</a>
+        <a href="#themes">Тематические композиции</a>
+        <a href="#care">Уход за цветами</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Сделайте ваш день ярче с нашими цветами</h2>
+    </div>
+
+    <section>
+        <div class="grid">
+            <div class="container" id="design">
+                <h2>Индивидуальный дизайн букетов</h2>
+                <p>Создание уникальных цветочных композиций, учитывающих предпочтения и требования клиента, с использованием различных сортов цветов.</p>
+            </div>
+            <div class="container" id="subscription">
+                <h2>Подписка на цветы</h2>
+                <p>Система регулярной доставки свежих цветов на определенные даты, позволяющая клиентам получать новые букеты на постоянной основе.</p>
+            </div>
+            <div class="container" id="events">
+                <h2>Оформление мероприятий</h2>
+                <p>Услуга по декорированию свадеб, корпоративов и других мероприятий цветами, включая создание арок, центров и других элементов.</p>
+            </div>
+            <div class="container" id="workshops">
+                <h2>Цветочные мастер-классы</h2>
+                <p>Образовательные занятия, на которых клиенты обучаются техникам создания цветочных композиций и букетов.</p>
+            </div>
+            <div class="container" id="themes">
+                <h2>Создание тематических композиций</h2>
+                <p>Разработка цветочных букетов и декора, которые соответствуют определенной теме или событию, например, праздникам или сезонам.</p>
+            </div>
+            <div class="container" id="care">
+                <h2>Консультации по уходу за цветами</h2>
+                <p>Обслуживание клиентов, предлагающее советы по выбору, уходу и содержанию живых цветов в домашних условиях.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Цветочный сервис. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
